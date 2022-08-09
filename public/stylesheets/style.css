@@ -1,0 +1,24 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bg-blue
+{
+  background: #353b48;
+  border-radius: 10px;
+  margin-bottom: 15px !important;
+}
+.bg-rose
+{
+  background:#ff4757;
+}
+
+nav a {text-decoration: none; font-size: 18px; padding: 10px 35px !important;text-transform: uppercase;}
+nav a:hover {color: #c0392b !important;}
+.blog-header-logo {text-decoration: none; }
+.blog-header-logo h1 {font-size: 18px; color: #2c3e50; font-weight: bold; font-style: italic;}

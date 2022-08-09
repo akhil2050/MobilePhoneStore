@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h2 Here is your #{currentPhone.brand} phone details 
+  table.table.table-striped
+    thead.thead-dark
+      tr
+        th(scope='col') Brand
+        th(scope='col') Model
+        th(scope='col') Price
+        th(scope='col') Storage
+        th(scope='col') Color
+        th(scope='col') sellerName
+        th(scope='col') phoneNumber
+        th(scope='col') email
+    tbody    
+        tr          
+          td= currentPhone.brand
+          td= currentPhone.model
+          td= currentPhone.price
+          td= currentPhone.storage
+          td= currentPhone.color
+          td= currentPhone.sellers.sellerName
+          td= currentPhone.sellers.phoneNumber
+          td= currentPhone.sellers.email

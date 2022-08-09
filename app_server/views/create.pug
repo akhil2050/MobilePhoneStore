@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    .container
+        h2 Create new Phone
+        form(action='' method = 'POST')
+            .form-group.mb-2
+            label Brand
+            input.form-control(type='text' name='brand' placeholder='Enter brand name')      
+            .form-group.mb-2
+            label Model
+            input.form-control(type='text' name='model' placeholder='Enter Model')    
+            .form-group.mb-2
+            label Price
+            input.form-control(type='text' name='price' placeholder='Enter price') 
+            .form-group.mb-2
+            label Storage
+            input.form-control(type='text' name='storage' placeholder='Enter storage') 
+            .form-group.mb-2
+            label Color
+            input.form-control(type='text' name='color' placeholder='Enter color') 
+            .form-group.mb-2
+            label sellerName
+            input.form-control(type='text' name='sellerName' placeholder='Enter sellerName') 
+            .form-group.mb-2
+            label phoneNumber
+            input.form-control(type='text' name='phoneNumber' placeholder='Enter phoneNumber') 
+            .form-group.mb-2
+            label email
+            input.form-control(type='text' name='email' placeholder='Enter email') 
+            button.mt-5.btn.btn-primary(type='submit') Submit

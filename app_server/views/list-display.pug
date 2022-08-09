@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  h3= subTtitile    
+  table.table.table-striped.table-dark
+    thead
+      tr
+        th(scope='col') Brand
+        th(scope='col') Model
+        th(scope='col') Price
+        th(scope='col') Storage
+        th(scope='col') Color
+    tbody
+      each phone in phones 
+        tr
+          th
+            a(href=`/list/${phone._id}`) 
+             | #{ phone.brand }
+          td= phone.model
+          td= phone.price
+          td= phone.storage
+          td= phone.email 
