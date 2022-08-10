@@ -1,0 +1,41 @@
+<div class="card">
+  <div class="card-body">  
+    <h3>Edit your phone {{editPhone.brand}}</h3>  
+      <form (ngSubmit)="updatePhone(editPhone)">
+        <div class="form-group col-md-6">
+          <label class="mb-1 form-label">Brand</label>
+          <input [(ngModel)]="editPhone.brand" class="form-control mb-3" id="brand"  name="brand" required="required">
+          
+        </div>
+      
+        <div class="form-group col-md-6">
+          <label class="mb-1">Model </label>
+          <input [(ngModel)]="editPhone.model" class="form-control mb-3" id="model"  name="model" required="required">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="mb-1">Price </label>
+          <input [(ngModel)]="editPhone.price" class="form-control mb-3" id="price" name="price" required="required">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="mb-1">Storage</label>
+          <input [(ngModel)]="editPhone.storage" class="form-control mb-3" id="storage"  name="storage" required="required">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="mb-1">Color </label>
+          <input [(ngModel)]="editPhone.color" class="form-control mb-3" id="color"  name="color" required="required">
+        </div>
+        <h4>Seller information</h4>
+        <label for="sellerName">Seller Name</label>
+        <input [(ngModel)]="editPhone.sellers.sellerName" class="form-control mb-3" id="sellerName" name="sellerName" required="required">
+        <label for="phoneNumber">Phone Number</label>
+        <input [(ngModel)]="editPhone.sellers.phoneNumber" class="form-control mb-3" id="phoneNumber" name="phoneNumber" required="required">
+        <label for="email">Email</label>
+        <input [(ngModel)]="editPhone.sellers.email" class="form-control mb-3" id="email" name="email" required="required">
+       
+       
+        <div class="form-group col-md-6">
+       <button  type="submit"  class="btn btn-primary">Update Phone</button> 
+        </div> 
+      </form>
+    </div>
+  </div>

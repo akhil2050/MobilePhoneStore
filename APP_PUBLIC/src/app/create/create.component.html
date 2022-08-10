@@ -1,0 +1,39 @@
+<h3>Add your phone</h3>
+<form (ngSubmit)="createNewPhone(newPhone)">
+    <div class="form-group col-md-6">
+        <label for="brand">Brand</label>
+        <input [(ngModel)]="newPhone.brand" class="form-control mb-3" id="brand" name="brand" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="model">model</label>
+        <input [(ngModel)]="newPhone.model" class="form-control mb-3" id="model" name="model" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="price">price</label>
+        <input [(ngModel)]="newPhone.price" class="form-control mb-3" id="price" name="price" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="storage">storage</label>
+        <input [(ngModel)]="newPhone.storage" class="form-control mb-3" id="storage" name="storage" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="color">color</label>
+        <input [(ngModel)]="newPhone.color" class="form-control mb-3" id="color" name="color" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <h4>Seller information</h4>
+        <label for="sellerName">Seller Name</label>
+        <input [(ngModel)]="newPhone.sellers.sellerName" class="form-control mb-3" id="sellerName" name="sellerName" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="phoneNumber">Phone Number</label>
+        <input [(ngModel)]="newPhone.sellers.phoneNumber" class="form-control mb-3" id="phoneNumber" name="phoneNumber" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="email">email</label>
+        <input [(ngModel)]="newPhone.sellers.email" class="form-control mb-3" id="email" name="email" required="required">
+    </div>
+    <div class="form-group col-md-6">
+        <button type="submit" class="btn btn-primary">Create</button>
+     </div>
+</form>

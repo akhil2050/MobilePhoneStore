@@ -1,0 +1,19 @@
+<app-header [content]="pageContent.header"></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 mt-3" *ngFor="let phone of phones">
+            <div class="card p-3">
+                <img class="card-img-top" src="assets/images/dummy_phone.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{phone.brand}}</h5>
+                  <h6 class="text-danger">$ {{phone.price}}</h6>
+                  <p class="card-text">Model {{phone.model}}</p>
+                  <p class="card-text">Storage {{phone.storage}}</p>
+                  <p class="card-text">Color {{phone.color}}</p>              
+                  <a routerLink="{{phone._id}}"  class="btn btn-primary"> Read More</a>
+                </div>
+              </div>
+          </div>
+    </div>
+</div>
+
